@@ -1,5 +1,5 @@
 package soa.model;
-// Generated Mar 24, 2024, 4:22:54 PM by Hibernate Tools 6.3.1.Final
+// Generated Mar 25, 2024, 1:32:21 AM by Hibernate Tools 6.3.1.Final
 
 import java.util.HashSet;
 import java.util.Set;
@@ -30,11 +30,6 @@ public class Users implements java.io.Serializable {
 		this.extra = extra;
 		this.orderses = orderses;
 	}
-
-	public Integer getId() {
-		return this.id;
-	}
-
 	public Users(String username, String pass, String name, String tel, String address, int extra) {
 		super();
 		this.username = username;
@@ -43,6 +38,11 @@ public class Users implements java.io.Serializable {
 		this.tel = tel;
 		this.address = address;
 		this.extra = extra;
+	}
+	//Create
+
+	public Integer getId() {
+		return this.id;
 	}
 
 	public void setId(Integer id) {
