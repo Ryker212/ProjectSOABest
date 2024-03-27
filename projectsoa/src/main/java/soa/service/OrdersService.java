@@ -42,6 +42,14 @@ public class OrdersService {
 		  return object ;
 
 	}
+	@GetMapping("/{id}")
+	public List<Map<String, Object>> getAllOrdersByUserId(@PathVariable("id") int id) {
+		  
+		  List<Map<String, Object>> object = ordersDAO.findById(id);
+
+		  return object ;
+
+	}
 	@PostMapping("/add")
 	public ResponseEntity<Object> addOrder(@RequestBody Map<String, String> body) {
 		HttpHeaders head = new HttpHeaders();

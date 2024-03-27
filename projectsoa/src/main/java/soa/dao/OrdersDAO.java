@@ -27,6 +27,11 @@ public class OrdersDAO {
 		return object;
 	}
 	
+	public List<Map<String, Object>> findById(int id) {
+		List<Map<String, Object>> object = ordersRepository.getOrdersById(id);
+		return object;
+	}
+	
 //	public Orders add(Map<String, String> body) {
 //		Integer employeesByCheckerId = Integer.parseInt(body.get("employeesByCheckerId"));
 //		Integer employeesBySenderId = Integer.parseInt(body.get("employeesBySenderId"));
