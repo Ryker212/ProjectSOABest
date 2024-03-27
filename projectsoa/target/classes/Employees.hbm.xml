@@ -18,21 +18,21 @@
         <property name="pass" type="string">
             <column length="50" name="pass" not-null="true"/>
         </property>
-        <set fetch="select" inverse="true" lazy="true" name="ordersesForCheckerId" table="orders">
+        <set fetch="select" inverse="true" lazy="false" name="ordersesForCheckerId" table="orders">
             <key>
-                <column name="checker_id" not-null="true"/>
+                <column name="checker_id" />
             </key>
             <one-to-many class="soa.model.Orders"/>
         </set>
-        <set fetch="select" inverse="true" lazy="true" name="ordersesForSenderId" table="orders">
+        <set fetch="select" inverse="true" lazy="false" name="ordersesForSenderId" table="orders">
             <key>
-                <column name="sender_id" not-null="true"/>
+                <column name="sender_id" />
             </key>
             <one-to-many class="soa.model.Orders"/>
         </set>
-        <set fetch="select" inverse="true" lazy="true" name="ordersesForRecieverId" table="orders">
+        <set fetch="select" inverse="true" lazy="false" name="ordersesForRecieverId" table="orders">
             <key>
-                <column name="reciever_id" not-null="true"/>
+                <column name="reciever_id" />
             </key>
             <one-to-many class="soa.model.Orders"/>
         </set>

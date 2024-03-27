@@ -7,13 +7,13 @@
             <generator class="identity"/>
         </id>
         <many-to-one class="soa.model.Employees" fetch="select" name="employeesByCheckerId">
-            <column name="checker_id" not-null="true"/>
+            <column name="checker_id" not-null="false"/>
         </many-to-one>
         <many-to-one class="soa.model.Employees" fetch="select" name="employeesBySenderId">
-            <column name="sender_id" not-null="true"/>
+            <column name="sender_id" not-null="false"/>
         </many-to-one>
         <many-to-one class="soa.model.Employees" fetch="select" name="employeesByRecieverId">
-            <column name="reciever_id" not-null="true"/>
+            <column name="reciever_id" not-null="false"/>
         </many-to-one>
         <many-to-one class="soa.model.Users" fetch="select" name="users">
             <column name="customer_id" not-null="true"/>
