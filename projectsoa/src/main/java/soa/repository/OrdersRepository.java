@@ -33,4 +33,8 @@ public interface OrdersRepository extends CrudRepository<Orders, Integer>{
              + "INNER JOIN water_temperature AS wt ON wt.id = o.temperature_id\r\n"
              + "WHERE u.id = :id")
     List<Map<String, Object>> getOrdersById(@Param("id") int id);
+	 
+	 @Query(nativeQuery = true,value = "SELECT o.status,COUNT(o.status) FROM orders AS o\r\n"
+             + "WHERE o.status = :status GROUP BY o.status")
+    List<Map<String, Object>> getOrdersBystatus(@Param("status") String status);
 }

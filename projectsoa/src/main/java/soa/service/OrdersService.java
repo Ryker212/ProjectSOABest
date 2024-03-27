@@ -50,6 +50,13 @@ public class OrdersService {
 		  return object ;
 
 	}
+	@GetMapping("/status/{status}")
+	public List<Map<String, Object>> getOrdersBystatus(@PathVariable("status") String status) {
+		  
+		  List<Map<String, Object>> object = ordersDAO.findByStatus(status);
+
+		  return object ;
+	}
 	@PostMapping("/add")
 	public ResponseEntity<Object> addOrder(@RequestBody Map<String, String> body) {
 		HttpHeaders head = new HttpHeaders();

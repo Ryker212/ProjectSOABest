@@ -31,6 +31,10 @@ public class OrdersDAO {
 		List<Map<String, Object>> object = ordersRepository.getOrdersById(id);
 		return object;
 	}
+	public List<Map<String, Object>> findByStatus(String s) {
+		List<Map<String, Object>> object = ordersRepository.getOrdersBystatus(s);
+		return object;
+	}
 	
 //	public Orders add(Map<String, String> body) {
 //		Integer employeesByCheckerId = Integer.parseInt(body.get("employeesByCheckerId"));
@@ -101,4 +105,5 @@ public class OrdersDAO {
 		ordersRepository.deleteById(i);
 		return true;
 	}
+
 }
