@@ -1,5 +1,5 @@
 package soa.model;
-// Generated Mar 25, 2024, 1:32:21 AM by Hibernate Tools 6.3.1.Final
+// Generated Mar 28, 2024, 12:05:20 AM by Hibernate Tools 6.3.1.Final
 
 import java.util.HashSet;
 import java.util.Set;
