@@ -26,18 +26,28 @@ public class OrdersDAO {
 		return object;
 	}
 	
+//	public Orders add(Map<String, String> body) {
+//		Integer employeesByCheckerId = Integer.parseInt(body.get("employeesByCheckerId"));
+//		Integer employeesBySenderId = Integer.parseInt(body.get("employeesBySenderId"));
+//		Integer employeesByRecieverId = Integer.parseInt(body.get("employeesByRecieverId"));
+//		Integer users = Integer.parseInt(body.get("users"));
+//		Integer waterTemperature = Integer.parseInt(body.get("waterTemperature"));
+//		Integer fabricSoftener = Integer.parseInt(body.get("fabricSoftener"));
+//		Integer package_ = Integer.parseInt(body.get("package_"));
+//		int plusdry = Integer.parseInt(body.get("plusdry"));
+//		String status = body.get("status");
+//		System.out.println("CheckerId: "+employeesByCheckerId);
+//		Orders newOrder = new Orders(employeesByCheckerId, employeesBySenderId, employeesByRecieverId, users, waterTemperature, fabricSoftener,package_,plusdry,status);
+//		return ordersRepository.save(newOrder);
+//	}
 	public Orders add(Map<String, String> body) {
-		Integer employeesByCheckerId = Integer.parseInt(body.get("employeesByCheckerId"));
-		Integer employeesBySenderId = Integer.parseInt(body.get("employeesBySenderId"));
-		Integer employeesByRecieverId = Integer.parseInt(body.get("employeesByRecieverId"));
 		Integer users = Integer.parseInt(body.get("users"));
 		Integer waterTemperature = Integer.parseInt(body.get("waterTemperature"));
 		Integer fabricSoftener = Integer.parseInt(body.get("fabricSoftener"));
 		Integer package_ = Integer.parseInt(body.get("package_"));
 		int plusdry = Integer.parseInt(body.get("plusdry"));
 		String status = body.get("status");
-		System.out.println("CheckerId: "+employeesByCheckerId);
-		Orders newOrder = new Orders(employeesByCheckerId, employeesBySenderId, employeesByRecieverId, users, waterTemperature, fabricSoftener,package_,plusdry,status);
+		Orders newOrder = new Orders( users, waterTemperature, fabricSoftener,package_,plusdry,status);
 		return ordersRepository.save(newOrder);
 	}
 }

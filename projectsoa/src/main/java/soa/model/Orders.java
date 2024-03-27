@@ -76,6 +76,35 @@ public class Orders implements java.io.Serializable {
 		this.status = status;
 	}
 
+	public Orders(Integer users, Integer waterTemperature, Integer fabricSoftener, Integer package_, int plusdry,
+			String status) {
+		
+		Users u = new Users();
+		u.setId(users);
+		//user
+		
+		WaterTemperature wt = new WaterTemperature();
+		wt.setId(waterTemperature);
+		//water
+		
+		FabricSoftener fs = new FabricSoftener();
+		fs.setId(fabricSoftener);
+		//Softenner
+		
+		MyPackage pk =new MyPackage();
+		pk.setId(package_);
+		//package
+		
+		
+		
+		this.users = u;
+		this.waterTemperature = wt;
+		this.fabricSoftener = fs;
+		this.package_ = pk;
+		this.plusdry = plusdry;
+		this.status = status;
+	}
+
 	public Integer getId() {
 		return this.id;
 	}
