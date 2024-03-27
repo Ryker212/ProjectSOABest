@@ -88,4 +88,12 @@ public class OrdersDAO {
 		
 		return ordersRepository.save(o);
 	}
+
+	public boolean delete(int i) {
+		if(!ordersRepository.existsById(i)) {
+			return false;
+		}
+		ordersRepository.deleteById(i);
+		return true;
+	}
 }
