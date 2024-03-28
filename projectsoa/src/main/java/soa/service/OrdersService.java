@@ -43,9 +43,18 @@ public class OrdersService {
 
 	}
 	@GetMapping("/{id}")
-	public List<Map<String, Object>> getAllOrdersByUserId(@PathVariable("id") int id) {
+	public List<Map<String, Object>> getAllOrdersById(@PathVariable("id") int id) {
 		  
 		  List<Map<String, Object>> object = ordersDAO.findById(id);
+
+		  return object ;
+
+	}
+	
+	@GetMapping("/userId/{id}")
+	public List<Map<String, Object>> getAllOrdersByUserId(@PathVariable("id") int id) {
+		  
+		  List<Map<String, Object>> object = ordersDAO.findByUser(id);
 
 		  return object ;
 

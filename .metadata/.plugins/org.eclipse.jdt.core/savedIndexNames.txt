@@ -66,7 +66,6 @@ INDEX VERSION 1.134+C:\Users\Best_ryker\Desktop\Code\Soa\project\ProjectSOABest\
 2361761291.index
 921246830.index
 1181555796.index
-4221789544.index
 2777683934.index
 2960568092.index
 3766726886.index

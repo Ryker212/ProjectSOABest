@@ -31,6 +31,10 @@ public class OrdersDAO {
 		List<Map<String, Object>> object = ordersRepository.getOrdersById(id);
 		return object;
 	}
+	public List<Map<String, Object>> findByUser(int id) {
+		List<Map<String, Object>> object = ordersRepository.getOrdersByUser(id);
+		return object;
+	}
 	public List<Map<String, Object>> findByStatus(String s) {
 		List<Map<String, Object>> object = ordersRepository.getOrdersBystatus(s);
 		return object;
