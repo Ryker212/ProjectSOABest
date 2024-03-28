@@ -6542,3 +6542,107 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2567-03-28 16:58:09.980
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2567-03-28 17:55:01.707 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2567-03-28 17:55:04.427
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2567-03-28 17:55:04.683
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2567-03-28 17:55:15.321
+!MESSAGE Logback config file: C:\Users\ASUS\Desktop\project_soa\ProjectSOABest\ProjectSOABest\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2567-03-28 17:55:16.952
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2567-03-28 17:55:16.952
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2567-03-28 17:55:19.087
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ASUS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.178
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.441
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.442
+!MESSAGE Could not send USER event 'Anonymous ID: 7b5d6f63-e6d6-4b9b-8f75-d138192b5dbd': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.444
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.446
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.447
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.448
+!MESSAGE Could not send USER event 'Anonymous ID: 7b5d6f63-e6d6-4b9b-8f75-d138192b5dbd': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.449
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.450
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.453
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.454
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.455
+!MESSAGE Could not send USER event 'Anonymous ID: 7b5d6f63-e6d6-4b9b-8f75-d138192b5dbd': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.456
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.457
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.458
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.458
+!MESSAGE Could not send USER event 'Anonymous ID: 7b5d6f63-e6d6-4b9b-8f75-d138192b5dbd': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.459
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2567-03-28 17:55:20.460
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2567-03-28 17:55:52.886
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2567-03-28 17:55:52.892
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
