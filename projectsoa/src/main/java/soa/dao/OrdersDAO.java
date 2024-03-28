@@ -97,6 +97,15 @@ public class OrdersDAO {
 		
 		return ordersRepository.save(o);
 	}
+	public Orders updateStatus(Map<String, String> body, int i) {
+		Orders o = ordersRepository.findById(i).get();
+		
+		String j = body.get("status");
+		
+		o.setStatus(j);
+		
+		return ordersRepository.save(o);
+	}
 
 	public boolean delete(int i) {
 		if(!ordersRepository.existsById(i)) {

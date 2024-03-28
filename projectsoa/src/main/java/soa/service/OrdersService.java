@@ -106,6 +106,19 @@ public class OrdersService {
 		return ("Update Sender Success");
 	}
 	
+	@PutMapping("/updateStatus/{id}")
+	public String updateStatus(@RequestBody Map<String, String> body,@PathVariable("id") int i) {
+		//HttpHeaders head = new HttpHeaders();
+		Orders object = ordersDAO.updateStatus(body,i);
+		//System.out.println("check: "+object);
+//		if (object == null) {
+//			HttpStatus status = HttpStatus.BAD_REQUEST;
+//			return new ResponseEntity<>("Create Fail", head, status);
+//		} 
+//		HttpStatus status = HttpStatus.OK;
+		return ("Update Status Success");
+	}
+	
 	@DeleteMapping("/delete/{id}")
 	public String deleteOrder(@PathVariable("id") int i) {
 		boolean j = ordersDAO.delete(i);
